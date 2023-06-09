@@ -19,17 +19,26 @@ TwoPlusOne 팀의 첫 토이 프로젝트이자, 자연과 소통하는 캠핑 �
 ### Features
 
 프로젝트 진행 기간은 약 한 달로, 주된 기능은 다음과 같습니다.
-|Google API||React-Quill|Naver Map API||
-|---|---|---|---|---|
-|1) 소셜 로그인|2) 메인화면|3) 게시글 에디터|4) 게시글 상세페이지|5) 마이페이지|
 
-_(사용된 api, 라이브러리, 기능 등 추가 작성 필요)_
+1) 소셜 로그인
+  - google login을 사용
 
-### ERD
+2) 메인화면
 
-_(ERD 삽입)_
+3) 게시글 에디터
+  - React-Quill을 활용한 게시글 작성
 
-<br/>
+4) Naver Map
+  - Naver Map API를 활용하여 게시글 작성시 캠핑장소도 함께 지도에 공유
+
+5) 게시글 상세페이지
+  - Slick을 활용한 캐러셀을 구현
+  - Intersection Observer API를 활용한 무한스크롤 구현
+  - Naver Map API를 활용하여 캠핑장소 공유
+
+6) 마이페이지
+  - 조건부 렌더링을 통한 컴포넌트 재사용을하여 각항목의 리스트를 구현
+
 
 ## 2. How We Work
 
@@ -71,8 +80,6 @@ _(ERD 삽입)_
 
 ## 3. 프로젝트 결과물
 
-### 🎞️ 전체 시연 영상 링크 _(링크 삽입 필요)_
-
 ### `feature/login` - 종혁님🎸
 ❗️영상
 
@@ -83,13 +90,6 @@ https://github.com/shinheylynn/modakbul/assets/120013855/f4b12fa9-e8f9-4305-a1bb
 - 구글로그인 구현시 ```@react-oauth/google``` 라이브러리를 사용하여 구현하였습니다.
 - 구글로그인 버튼을 커스터마이징 하여 구현하였습니다. 
 - 구글로그인을 통해 받은 token을 백엔드로 POST하여 token형식으로 jwt 로그인 방식으로 구현하였습니다. 
-
-
-### `feature/nav` - 혜린님🌴
-
-### `feature/main` - 혜린님🌴
-
-### `feature/posting` - 혜린님🌴
 
 ### `feature/posting/naverMapAPI` - 종혁님🎸
 ❗️영상
@@ -104,14 +104,7 @@ https://github.com/shinheylynn/modakbul/assets/120013855/0062dce0-2ea0-4d85-8514
 
 ### `feature/postingDetail` - 종혁님🎸
 ❗️영상
-
-- 1번 영상
-
-https://github.com/shinheylynn/modakbul/assets/120013855/42c5514d-aff2-4efe-9815-334b8ff9de19
-
-- 2번 영상
-
-https://github.com/shinheylynn/modakbul/assets/120013855/ad1c163d-a4d9-410e-a36f-f9013433fab2
+![포스팅 디테일 페이지](https://github.com/HYUK9086/modakbul/assets/120013855/39509436-3c0d-406e-8274-06b1fb549162)
 
 
 ❗️구현사항
